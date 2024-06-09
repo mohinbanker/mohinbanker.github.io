@@ -12,7 +12,7 @@
             flex-direction: column;
             align-items: center;
             margin: 0;
-            padding: 0;
+            padding: 20px;
         }
         .nav {
             position: absolute;
@@ -26,22 +26,47 @@
             transition: color 0.3s ease;
         }
         .nav a:hover {
-            color: #123F6A;
+            color: #2255CC;
         }
-        .publications {
+        .content {
             margin-top: 100px;
             width: 80%;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            color: #000000;
         }
         .publication {
             margin-bottom: 20px;
         }
-        .publication h2 {
+        .publication h3 {
             margin: 0 0 5px 0;
-            color: #123F6A;
+            font-size: 1.1em;
+            font-weight: normal;
+            color: #000000;
         }
         .publication ul {
             margin: 0;
-            padding-left: 20px;
+            padding-left: 40px;
+        }
+        .publication ul li {
+            margin: 5px 0;
+        }
+        .publication .description {
+            list-style-type: none;
+            color: #123456;
+
+        }
+        .publication a {
+            color: #00BFFF;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .publication a:hover {
+            text-decoration: underline;
+            color: #123456;
         }
     </style>
 </head>
@@ -51,22 +76,56 @@
         <a href="cv.html">CV</a>
         <a href="research.html">Research</a>
     </div>
-    <div class="publications">
-        <div class="publication">
-            <h2>Publication Title 1</h2>
-            <ul>
-                <li><a href="link_to_article_1">Link to Article</a></li>
-                <li><a href="link_to_related_material_1">Link to Related Material</a></li>
-            </ul>
+    <div class="content">
+        <div class="section">
+            <h2>Research in progress</h2>
+            <div class="publication">
+                <h3><b>Banker, Mohin</b>, Joowon Klusowski, and Gal Zauberman. "Consumers Generalize Positive Information More than Negative Information (When Accounting for Prior Beliefs)". <i>Under review at Journal of Marketing Research.</i></h3>
+                <ul>
+                    <li class="description">A lot of work says people generalize negative information more than positive information (e.g., what they dislike vs. like) and some work says the opposite. We show prior beliefs can explain both sets of findings. Accounting for prior beliefs reveals that positive information is actually generalized more the negative information.</li>
+                </ul>
+            </div>
+            <div class="publication">
+                <h3><b>Banker, Mohin</b>, Ravi Dhar, and Nathan Novemsky. "Price Neglect in Profit Perceptions: Consumers Attribute Increasing Profits to Higher Sales not Prices". <i>Manuscript in preparation for submission at Management Science.</i></h3>
+            </div>
+            <div class="publication">
+                <h3><b>Banker, Mohin</b>, Sally Shin, and Gal Zauberman. "The Primacy of Experience: Preference for Information from Experience over Observation". <i>Manuscript in preparation for submission at Journal of Consumer Research.</i></h3>
+            </div>
         </div>
-        <div class="publication">
-            <h2>Publication Title 2</h2>
-            <ul>
-                <li><a href="link_to_article_2">Link to Article</a></li>
-                <li><a href="link_to_related_material_2">Link to Related Material</a></li>
-            </ul>
+        <div class="section">
+            <h2>Publications</h2>
+            <div class="publication">
+                <h3><b>Banker, Mohin</b>, Moses Miller, Guy Voichek, Dafna Goor, and Tamar Makov. "Prosocial nudges and visual indicators increase social distancing, but authoritative nudges do not." <i>Proceedings of the National Academy of Sciences</i> 119, no. 33 (2022): e2116156119.</h3>
+                <ul>
+                    <li class="description">We conduct a field experiment in an airport at the height of the COVID-19 pandemic. Color-coded visual indicators and messages like "Protect yourself" and "Protect others" increase social distancing in the airport, but authoritative messages like "Follow CDC COVID-19 guidelines" are ineffective.</li>
+                    <li><a href="https://www.pnas.org/doi/full/10.1073/pnas.2116156119">Open access link to the paper.</a></li>
+                    <li><a href="https://github.com/mohinbanker/airport">Open access link to data.</a></li>
+                    <li><a href="https://www.forbes.com/sites/lbsbusinessstrategyreview/2022/10/21/ditch-the-authoritarian-approach-if-you-want-people-to-act-in-a-socially-responsible-way/?sh=3f2771ea2387">Featured in Forbes.</a></li>
+                </ul>
+            </div>
+            <div class="publication">
+                <h3>Cain, Daylian M., and <b>Mohin Banker</b>. "Do Conflict of Interest Disclosures Facilitate Public Trust?." AMA Journal of Ethics 22, no. 3 (2020): 232-238.</h3>
+                <ul>
+                    <li class="description">Some work claims that the perverse effects of disclosing conflicts of interest can be mitigated, but we argue that they look at incidence of lying, rather than unintentional biases that arise in realistic environments.</li>
+                    <li><a href="https://journalofethics.ama-assn.org/article/do-conflict-interest-disclosures-facilitate-public-trust/2020-03">Open access link to paper.</a></li>
+                </ul>
+            </div>
+            <div class="publication">
+                <h3><b>Banker, Mohin</b>, Cheryl Cooper, Heidi Johnson, Melissa Knoll, and David Sieminski (2019), “Planning for Tax-Time Savings.” Consumer Financial Protection Bureau Office of Research Reports.</h3>
+                <ul>
+                    <li><a href="https://files.consumerfinance.gov/f/documents/cfpb_planning-for-tax-time-savings_report.pdf">Open access link to paper.</a></li>
+                    <li><a href="https://www.consumerfinance.gov/about-us/newsroom/bureau-releases-research-tax-time-savings/">Press release by the CFPB.</a></li>
+                    <li>Featured in 
+                        <a href = "https://www.cnbc.com/video/2019/09/03/cfpb-tax-time-savings-study-acorns-squawk-box.html">CNBC Squawk Box</a>,
+                        <a href = "https://www.cnbc.com/2019/09/03/consumer-watchdog-agency-shows-one-way-to-help-improve-your-savings.html">CNBC.com</a>,
+                        <a href = "https://finance.yahoo.com/news/h-r-block-help-promote-193232071.html">Yahoo! Finance</a>, 
+                        <a href = "https://www.bankersonline.com/topstory/162357">Bankers Online</a>, 
+                        <a href = "https://www.consumerfinancemonitor.com/2014/10/06/cfpb-announces-research-pilot-on-ways-to-encourage-consumers-to-save-at-tax-time/">Consumer Finance Monitor</a>,
+                        <a href = "https://www.doddfrankupdate.com/DFU/ArticlesDFU/CFPB-offers-insights-on-taxtime-consumer-saving-ha-77261.aspx">Dodd Frank Update</a>,
+                        <a href = "https://financialregnews.com/hr-block-does-pilot-study-with-cfpb-on-use-of-their-prepaid-card/">Financial Regulation News</a>.
+                </ul>
+            </div>
         </div>
-        <!-- Add more publications as needed -->
     </div>
 </body>
 </html>
