@@ -7,11 +7,11 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin: 0;
-            padding: 0;
         }
         .nav {
             position: absolute;
@@ -22,18 +22,32 @@
             margin: 0 10px;
             text-decoration: none;
             color: #000;
+            transition: color 0.3s ease;
+        }
+        .nav a:hover {
+            color: #2255CC;
         }
         .container {
             display: flex;
             align-items: center;
+            justify-content: center;
             margin-top: 100px;
+            padding: 0 20px;
+            max-width: 900px;
+            width: 100%;
         }
         .about {
             margin-left: 20px;
+            max-width: 500px;
         }
         img {
-            max-width: 200px;
-            border-radius: 50%;
+            width: 300px;
+            height: 420px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        h1 {
+            color: #2255CC;
         }
     </style>
 </head>
@@ -44,11 +58,16 @@
         <a href="research.html">Research</a>
     </div>
     <div class="container">
-        <img src="path_to_your_headshot.jpg" alt="Headshot">
+        <img src="Images/headshot.png" alt="Headshot">
         <div class="about">
-            <h1>About Me</h1>
-            <p>
-                [Insert your bio here.]
+            <h1>Mohin Banker</h1>
+            <p> I am a PhD Candidate in Behavioral Marketing at the Yale School of Management. I am currently on the job market.</p>
+
+             <p>   I am broadly interested in studying consumers' beliefs and how they change.</p>
+
+               <p> Prior to Yale, I worked at the Consumer Financial Protection Bureau (CFPB), where I helped conduct behavioral research on improving financial disclosures and promoting savings habits. I received my B.S. in Mathematical Sciences and Economics from Carnegie Mellon University.</p>
+
+                <p>Email: <a href="mailto:mohin.banker@yale.edu">mohin.banker@yale.edu</a></p>
             </p>
         </div>
     </div>
